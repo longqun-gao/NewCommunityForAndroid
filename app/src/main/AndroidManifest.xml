@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xhwl.xhwlownerapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity android:name=".MainActivity" />
+        <!-- 登录 -->
+        <activity android:name=".activity.view.LoginView.LoginActivity" />
+
+        <!-- 首次登录设置密码 -->
+        <activity android:name=".activity.view.RegisterView.SetPasswordActivity" />
+
+        <!-- 第三方首次登录绑定手机 -->
+        <activity android:name=".activity.view.RegisterView.WechatRegBindPhoneActivity" />
+
+        <!-- 用户个人中心 -->
+        <activity android:name=".activity.view.UserInfoView.UserInfoActivity" />
+
+        <!-- 用户基本信息 -->
+        <activity android:name=".activity.view.UserInfoView.BasicInformationActivity" />
+
+        <!-- 修改头像 -->
+        <activity android:name=".activity.view.UserInfoView.ModifyHeadPortraitActivity" />
+
+        <!-- 修改昵称 -->
+        <activity android:name=".activity.view.UserInfoView.ModifyNicknameActivity" />
+
+        <!-- 修改性别 -->
+        <activity android:name=".activity.view.UserInfoView.ModifySexActivity" />
+
+        <!-- 我的二维码 -->
+        <activity android:name=".activity.view.UserInfoView.MyQrCodeActivity" />
+
+        <!-- 账号安全 -->
+        <activity android:name=".activity.view.UserInfoView.AccountSecurityActivity" />
+
+        <!-- 更换绑定手机 -->
+        <activity android:name=".activity.view.UserInfoView.ChangePhoneActivity" />
+
+        <!-- 确定更换 -->
+        <activity android:name=".activity.view.UserInfoView.DetermineChangePhoneActivity"></activity>
+
+        <!-- 修改密码 -->
+        <activity android:name=".activity.view.UserInfoView.ModifyPwdActivity"></activity>
+
+        <!-- 忘记密码 -->
+        <activity android:name=".activity.view.UserInfoView.ForgetPwdActivity"></activity>
+
+        <!-- 重置密码 -->
+        <activity android:name=".activity.view.UserInfoView.ResetPwdActivity">
+
+
+        </activity>
+        <activity android:name=".activity.view.HomeView.HomeActivity">
+            <!-- 入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
